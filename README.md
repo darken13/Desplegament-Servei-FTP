@@ -22,24 +22,27 @@ ftp-project/
 ```
 
 ## Desplegament del servei
+**Accedeix al directori del projecte**
 
-cd ftp-project  
-Accedeix al directori del projecte.
+`cd ftp-project  `
 
-docker-compose build  
-Construeix la imatge Docker amb el servidor FTP.
+**Construeix la imatge Docker amb el servidor FTP**
 
-docker-compose up -d  
-Inicia el servei FTP en segon pla.
+`docker-compose build`
 
-docker ps  
-Comprova que el contenidor està en execució i actiu.
+**Inicia el servei FTP en segon pla**
+
+`docker-compose up -d`
+
+**Comprova que el contenidor està en execució i actiu**
+
+`docker ps`
 
 ## Accés al servidor FTP
 
-Es recomana utilitzar un client FTP dedicat com FileZilla.
+**Es recomana utilitzar un client FTP dedicat com FileZilla**
 
-Dades de connexió:
+**Dades de connexió:**
 - Host: 127.0.0.1
 - Port: 21
 - Usuari: empleat1
@@ -47,10 +50,11 @@ Dades de connexió:
 
 ## Aturar el servei
 
-docker-compose down  
-Atura i elimina el contenidor FTP.
+**Atura i elimina el contenidor FTP**
+
+`docker-compose down`
 
 ## Notes finals
-- L’accés anònim només permet la descàrrega de fitxers.
+- L'accés anònim només permet la descàrrega de fitxers.
 - El mode passiu és el més recomanat per evitar problemes de connexió.
 - Per a entorns reals, és millor utilitzar protocols més segurs com FTPS o SFTP.
