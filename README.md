@@ -24,7 +24,9 @@ ftp-project/
 ## Desplegament del servei
 **Accedeix al directori del projecte**
 
-```cd ftp-project```
+```text
+cd ftp-project
+```
 
 **Construeix la imatge Docker amb el servidor FTP**
 
